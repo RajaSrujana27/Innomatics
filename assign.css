@@ -1,65 +1,78 @@
-p{
-    color: rgb(17, 22, 57);
-}
 
-.btn{
-    cursor: pointer;
-}
-
-#id1{
-    text-decoration: underline;
-}
-
-.container{
-    border: 5px solid blue;
-    padding: 30px;
-    margin: 40px;
-}
-
-.gridContainer{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns:  1fr 1fr 1fr 1fr;
-    height: 20px;
-    justify-content: center;
-    gap: 6px;
-    margin: 30px;
-}
-
-.profileGridContainer{
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns:  1fr 1fr 1fr 1fr;
-    height: 20px;
-    justify-content: center;
-    gap: 7px;
-    margin:30px
-}
-
-.gridItem{
-    align-self: center;
-    border: 9px solid rgb(103, 120, 210);
-    height: 300px;
-}
-
-img{
-    width: 120px;
-    height: 120px;
-}
-
-.gridFlexItem{
-    display: flex;
+.profile {
+    box-sizing:content-box;
+    margin: 0;
+    padding: 0;
     flex-direction: column;
     align-items: center;
-}
-
-.flexName{
-    align-content: flex-start;
-}
-
-.flexPlace{
-    align-content: flex-end;
-}
-.flexgraduation{
-    align-content: flex-end;
-}
+  }
+  
+  body {
+    color: #333;
+    background-color: whitesmoke;
+  }
+  
+  .instagram-feed {
+    margin: 50px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    gap:3px;
+    align-items: center;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  header h1 {
+    margin: 5px;
+  }
+  
+  .feed-container {
+    display: grid;
+    flex-direction: column;
+    grid-gap: 15px;
+  }
+  
+  .post-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .post {
+    width: 501px;
+    margin: 10px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+  }
+  
+  .post img {
+    width: 501px;
+    height: 300px;
+    object-fit: fill;
+    border-radius: 5px ;
+  }
+  
+  .post-info {
+    padding: 12px;
+  }
+  
+  .post-info h2 {
+    margin-top: 0;
+  }
+  
+  .post-info p {
+    font-size: 20px;
+    color: #666;
+  }
