@@ -1,0 +1,77 @@
+.imagecontainer{
+    position: relative;
+    max-width: 100%;
+    height: 500px;
+}
+.imagecontainer img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: filter 0, 5s ease;
+}
+.imagecontainer:hover{
+    filter:blur(2px);
+}
+.titlecontainer{
+    position: absolute;
+    top: 18%;
+    left: 40%;
+    transform: translate(-50%, -31%);
+    font-weight: 90;
+    width: 50%;
+    height: auto;
+}
+.title{
+    transform: translate(15%, -60%);
+    margin-top: 4rem;
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.titlecontainer:hover{
+    filter:blur(2px);
+}
+.search-container{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: auto;
+    text-align: center;
+    color: white;
+    font-size: x-large;
+
+}
+.search-container:hover{
+    cursor: pointer;
+    width: 90%;
+}
+.card-img-top{
+    margin-top: 20px;
+    padding: 20px;
+    height: 50%;
+    width: 50px;
+    border: 10px;
+    border-radius: 10%;
+    border:1px solid transparent;
+}
+.card-text{
+    margin: 20px;
+
+}
+.card-group{
+    width: 100%;
+    margin-bottom: 20px;
+    max-height: 20px;
+    padding: 5px;
+    height:75%;
+
+}
+.card-body{
+    height: 50%;
+}
+.card:hover{
+    cursor: pointer;
+    filter: drop-shadow(2px);
+}
